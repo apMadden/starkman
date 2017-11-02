@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">man</string>
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+</resources>

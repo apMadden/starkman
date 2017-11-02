@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="iron_man_card_height">100dp</dimen>
+    <dimen name="iron_man_card_image_height">70dp</dimen>
+    <dimen name="iron_man_card_image_width">70dp</dimen>
+
+    <!-- Bottom sheets -->
+    <dimen name="material_component_bottom_sheet_edge_left_right_margins">16dp</dimen>
+    <dimen name="material_component_bottom_sheet_edge_top_bottom_margins">8dp</dimen>
+    <dimen name="material_component_bottom_sheet_list_item_height">48dp</dimen>
+    <dimen name="material_component_bottom_sheet_list_item_text_horizontal_padding">32dp</dimen>
+    <!-- Bottom navigation -->
+    <dimen name="material_component_bottom_navigation_height">56dp</dimen>
+    <!-- Buttons -->
+    <dimen name="material_component_button_height">36dp</dimen>
+    <dimen name="material_component_button_dense_height">32dp</dimen>
+    <dimen name="material_component_button_min_width">88dp</dimen>
+    <dimen name="material_component_button_touchable_target_height">48dp</dimen>
+    <dimen name="material_component_button_corner_radius">2dp</dimen>
+    <dimen name="material_component_button_text_left_and_right_padding">16dp</dimen>
+    <dimen name="material_component_button_text_size">14pt</dimen>
+    <dimen name="material_component_button_dense_text_size">13pt</dimen>
+    <!-- Floating action button -->
+    <dimen name="material_component_floating_action_button_margin">16dp</dimen>
+    <dimen name="material_component_floating_action_button_size">56dp</dimen>
+    <dimen name="material_component_floating_action_button_mini_size">40dp</dimen>
+    <!-- Cards -->
+    <dimen name="material_component_cards_primary_title_top_padding">24dp</dimen>
+    <dimen name="material_component_cards_primary_title_bottom_padding">16dp</dimen>
+    <dimen name="material_component_cards_action_button_row_padding">8dp</dimen>
+    <dimen name="material_component_cards_supporting_text_top_padding">16dp</dimen>
+    <dimen name="material_component_cards_supporting_text_bottom_padding">24dp</dimen>
+    <dimen name="material_component_cards_left_and_right_padding">16dp</dimen>
+    <dimen name="material_component_cards_top_and_bottom_padding">16dp</dimen>
+    <dimen name="material_component_cards_padding_from_edge_of_screen_to_card">8dp</dimen>
+    <dimen name="material_component_cards_space_between_cards">8dp</dimen>
+</resources>

@@ -1,0 +1,69 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+
+    <data>
+
+        <import type="iron.man.R"/>
+
+        <variable
+            name="data"
+            type="iron.man.IronManViewModel"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_shopping_cart_transaction_item"
+        style="@style/CardView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/iron_man_card_height"
+        android:layout_marginEnd="@dimen/material_component_cards_padding_from_edge_of_screen_to_card"
+        android:layout_marginStart="@dimen/material_component_cards_padding_from_edge_of_screen_to_card"
+        android:layout_marginTop="@dimen/material_component_cards_space_between_cards"
+        android:onClick="@{() -> data.onViewClicked()}"
+        android:theme="@style/Base.CardView"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:contentPaddingBottom="@dimen/material_component_bottom_sheet_edge_top_bottom_margins"
+        app:contentPaddingLeft="@dimen/material_component_bottom_sheet_edge_top_bottom_margins"
+        app:contentPaddingRight="@dimen/material_component_bottom_sheet_edge_top_bottom_margins"
+        app:contentPaddingTop="@dimen/material_component_bottom_sheet_edge_top_bottom_margins">
+
+        <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_shopping_cart_transaction_image"
+                android:layout_width="@dimen/iron_man_card_image_width"
+                android:layout_height="@dimen/iron_man_card_image_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:imageURL="@{data.productImageURL}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cost_display"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/pig" />
+
+            <TextView
+                android:id="@+id/cost_display"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="24dp"
+                android:text="Iron Man Zebra Corp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/iv_shopping_cart_transaction_image"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</layout>
